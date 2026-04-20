@@ -22,6 +22,9 @@
  *   3. This notice may not be removed or altered from any source distribution.
 */
 
+#ifndef MFS_H
+#define MFS_H
+
 #include <math.h>
 #include <stdio.h>
 #include <stdint.h>
@@ -1164,3 +1167,5 @@ int mfs_rename(const char * old, const char * next) {
     MFS_WRITE(_mfs_get_block(&mfs_global_state, block), &header, sizeof(_mfs_file_header));
     return 0;
 }
+
+#endif
