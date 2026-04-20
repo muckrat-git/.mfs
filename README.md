@@ -28,6 +28,10 @@ It has been tested on:
 - And even a 1024-byte Arduino EEPROM!
 
 ## Core API
+Setup
+```
+bool   mfs_init(uint64_t address, uint32_t blocks, uint16_t block_size);
+```
 File operations
 ```
 int     mfs_open(const char * path, const char * mode);
