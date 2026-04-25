@@ -1007,7 +1007,7 @@ mfs_dir mfs_open_root() {
 }
 
 int mfs_touch(const char * path) {
-    return _mfs_mkent(path, MFS_DIR, 0);
+    return _mfs_mkent(path, MFS_FILE, 0);
 }
 
 // == Definitions ==
